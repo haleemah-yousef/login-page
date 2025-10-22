@@ -1,7 +1,8 @@
 import React, { useEffect } from "react";
-import { Input } from "./Input";
-import { Button } from "./Button";
+import { Input } from "../../atoms/Input/Input";
+import { Button } from "../../atoms/Button/Button";
 import { useState } from "react";
+import styles from "./Form.module.css"
 
 
 export function Form() 
@@ -18,7 +19,7 @@ export function Form()
 
     
     return (
-        <form >
+        <form className={styles.formContainer}>
         <h2 style={{ textAlign: "center" }}>Login</h2>
         
         <Input
